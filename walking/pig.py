@@ -12,7 +12,7 @@ class Pig:
         self.food = food
 
     def __str__(self):
-        return f"{self.name} is a {self.species}"
+        return f"{self.name} the {self.species}"
 
     def feed(self):
         print(
