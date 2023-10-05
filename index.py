@@ -3,34 +3,34 @@ from swimming import Catfish, Duck, Frog, Goldfish, Turtle
 from walking import Donkey, Goat, Llama, Pig, Sheep
 
 
-miss_fuzz = Llama("Miss Fuzz", "llama", "midday")
+miss_fuzz = Llama("Miss Fuzz", "llama", "morning", "Llama Chow")
 
-bramble = Donkey("Bramble", "donkey", "morning")
+bramble = Donkey("Bramble", "donkey", "midday", "hay")
 
-rosie = Goat("Rosie", "goat", "afternoon")
+rosie = Goat("Rosie", "goat", "afternoon", "grains")
 
-bailey = Sheep("Bailey", "sheep", "morning")
+bailey = Sheep("Bailey", "sheep", "morning", "fruit")
 
-wilbur = Pig("Wilbur", "pig", "midday")
+wilbur = Pig("Wilbur", "pig", "midday", "vegetables")
 
-sunny = Corn_Snake("Sunny", "corn snake")
+sunny = Corn_Snake("Sunny", "corn snake", "mice")
 
-sly = Rat_Snake("Sly", "rat snake")
+sly = Rat_Snake("Sly", "rat snake", "mice")
 
-regal = Kingsnake("Regal", "kingsnake")
+regal = Kingsnake("Regal", "kingsnake", "lizards")
 
-monty = Python("Monty", "python")
+monty = Python("Monty", "python", "mice")
 
-serpentine = Boa_Constrictor("Serpentine", "boa constrictor")
+serpentine = Boa_Constrictor("Serpentine", "boa constrictor", "mice")
 
-quackers = Duck("Quackers", "duck")
+quackers = Duck("Quackers", "duck", "Waterfowl Pellets")
 
-bubbles = Goldfish("Bubbles", "goldfish")
+bubbles = Goldfish("Bubbles", "goldfish", "algae")
 
-whiskers = Catfish("Whiskers", "catfish")
+whiskers = Catfish("Whiskers", "catfish", "insects ")
 
-sheldon = Turtle("Sheldon", "turtle")
+sheldon = Turtle("Sheldon", "turtle", "fruit")
 
-hopkins = Frog("Hopkins", "bullfrog")
+hopkins = Frog("Hopkins", "bullfrog", "insects")
 
-print(f'{wilbur.name} the {wilbur.species} is available to pet during the {wilbur.shift} shift.')
+sheldon.feed()  # If you do print(miss_fuzz.feed()) then None prints after message
