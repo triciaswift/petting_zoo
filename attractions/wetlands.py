@@ -7,3 +7,7 @@ class Wetlands:
 
     def animal_additions(self, animal):
         self.aquatic_animals.append(animal)
+
+    @property
+    def last_critter_added(self):
+        return f'{self.aquatic_animals[-1]}'
