@@ -3,34 +3,34 @@ from swimming import Catfish, Duck, Frog, Goldfish, Turtle
 from walking import Donkey, Goat, Llama, Pig, Sheep
 
 
-miss_fuzz = Llama("Miss Fuzz", "domestic Llama")
+miss_fuzz = Llama("Miss Fuzz", "llama", "midday")
 
-bramble = Donkey("Bramble", "domestic donkey")
+bramble = Donkey("Bramble", "donkey", "morning")
 
-rosie = Goat("Rosie", "pygmy goat")
+rosie = Goat("Rosie", "goat", "afternoon")
 
-bailey = Sheep("Bailey", "domestic sheep")
+bailey = Sheep("Bailey", "sheep", "morning")
 
-wilbur = Pig("Wilbur", "pot-bellied pig")
+wilbur = Pig("Wilbur", "pig", "midday")
 
-sunny = Corn_Snake("Sunny", "classic corn snake")
+sunny = Corn_Snake("Sunny", "corn snake")
 
-sly = Rat_Snake("Sly", "black rat snake")
+sly = Rat_Snake("Sly", "rat snake")
 
-regal = Kingsnake("Regal", "california kingsnake")
+regal = Kingsnake("Regal", "kingsnake")
 
-monty = Python("Monty", "ball python")
+monty = Python("Monty", "python")
 
-serpentine = Boa_Constrictor("Serpentine", "common boa constrictor")
+serpentine = Boa_Constrictor("Serpentine", "boa constrictor")
 
-quackers = Duck("Quackers", "mallard")
+quackers = Duck("Quackers", "duck")
 
-bubbles = Goldfish("Bubbles", "common goldfish")
+bubbles = Goldfish("Bubbles", "goldfish")
 
-whiskers = Catfish("Whiskers", "channel catfish")
+whiskers = Catfish("Whiskers", "catfish")
 
-sheldon = Turtle("Sheldon", "painted turtle")
+sheldon = Turtle("Sheldon", "turtle")
 
 hopkins = Frog("Hopkins", "bullfrog")
 
-print(hopkins.name)
+print(f'{wilbur.name} the {wilbur.species} is available to pet during the {wilbur.shift} shift.')
