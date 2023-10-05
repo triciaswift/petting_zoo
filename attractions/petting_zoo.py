@@ -7,3 +7,7 @@ class Petting_Zoo:
 
     def animal_additions(self, animal):
         self.animals.append(animal)
+
+    @property
+    def last_critter_added(self):
+        return f'{self.animals[-1]}'

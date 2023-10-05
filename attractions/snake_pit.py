@@ -7,3 +7,7 @@ class Snake_Pit:
 
     def animal_additions(self, snake):
         self.snakes.append(snake)
+
+    @property
+    def last_critter_added(self):
+        return f'{self.snakes[-1]}'
