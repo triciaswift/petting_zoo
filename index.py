@@ -34,3 +34,6 @@ sheldon = Turtle("Sheldon", "turtle", "fruit")
 hopkins = Frog("Hopkins", "bullfrog", "insects")
 
 sheldon.feed()  # If you do print(miss_fuzz.feed()) then None prints after message
+
+# bc of __str__ in the class we can do this and not get an error message
+print(monty)
