@@ -1,6 +1,6 @@
-from slithering import Boa_Constrictor, Corn_Snake, Kingsnake, Python, Rat_Snake
-from swimming import Catfish, Duck, Frog, Goldfish, Turtle
-from walking import Donkey, Goat, Llama, Pig, Sheep
+from animals.slithering import Boa_Constrictor, Corn_Snake, Kingsnake, Python, Rat_Snake
+from animals.swimming import Catfish, Duck, Frog, Goldfish, Turtle
+from animals.walking import Donkey, Goat, Llama, Pig, Sheep
 from attractions import Petting_Zoo, Snake_Pit, Wetlands
 
 # Create instances of animals
@@ -76,3 +76,7 @@ critter_cove.animal_additions(hopkins)
 # print(critter_cove.last_critter_added)
 
 # * --------------Eliminating Class Waste-----------------
+miss_fuzz.feed()
+sheldon.feed()
+serpentine.feed()
+quackers.feed()
