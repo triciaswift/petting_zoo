@@ -1,6 +1,20 @@
-from animals.slithering import Boa_Constrictor, Corn_Snake, Kingsnake, Python, Rat_Snake
-from animals.swimming import Catfish, Duck, Frog, Goldfish, Turtle
-from animals.walking import Donkey, Goat, Llama, Pig, Sheep
+from animals import (
+    Boa_Constrictor,
+    Corn_Snake,
+    Kingsnake,
+    Python,
+    Rat_Snake,
+    Catfish,
+    Duck,
+    Frog,
+    Goldfish,
+    Turtle,
+    Donkey,
+    Goat,
+    Llama,
+    Pig,
+    Sheep,
+)
 from attractions import Petting_Zoo, Snake_Pit, Wetlands
 
 # Create instances of animals
@@ -21,29 +35,26 @@ sheldon = Turtle("Sheldon", "turtle", "fruit", 432109)
 hopkins = Frog("Hopkins", "bullfrog", "insects", 109876)
 
 # Create instances of attractions
-varmint_village = Petting_Zoo(
-    "Varmint Village", "cute and fuzzy critters to cuddle")
-slither_inn = Snake_Pit(
-    "Slither Inn", "stupendous snakes of all sizes")
-critter_cove = Wetlands(
-    "Critter Cove", "full of feathered friends and fantastic fish")
+varmint_village = Petting_Zoo("Varmint Village", "cute and fuzzy critters to cuddle")
+slither_inn = Snake_Pit("Slither Inn", "stupendous snakes of all sizes")
+critter_cove = Wetlands("Critter Cove", "full of feathered friends and fantastic fish")
 
 # Add animals to attractions
-varmint_village.animal_additions(miss_fuzz)
-varmint_village.animal_additions(bramble)
-varmint_village.animal_additions(rosie)
-varmint_village.animal_additions(bailey)
-varmint_village.animal_additions(wilbur)
-slither_inn.animal_additions(sunny)
-slither_inn.animal_additions(sly)
-slither_inn.animal_additions(regal)
-slither_inn.animal_additions(monty)
-slither_inn.animal_additions(serpentine)
-critter_cove.animal_additions(quackers)
-critter_cove.animal_additions(bubbles)
-critter_cove.animal_additions(whiskers)
-critter_cove.animal_additions(sheldon)
-critter_cove.animal_additions(hopkins)
+varmint_village.add_animal(miss_fuzz)
+varmint_village.add_animal(bramble)
+varmint_village.add_animal(rosie)
+varmint_village.add_animal(bailey)
+varmint_village.add_animal(wilbur)
+slither_inn.add_animal(sunny)
+slither_inn.add_animal(sly)
+slither_inn.add_animal(regal)
+slither_inn.add_animal(monty)
+slither_inn.add_animal(serpentine)
+critter_cove.add_animal(quackers)
+critter_cove.add_animal(bubbles)
+critter_cove.add_animal(whiskers)
+critter_cove.add_animal(sheldon)
+critter_cove.add_animal(hopkins)
 
 
 # * ------------------Food Function Fun------------------
@@ -53,18 +64,24 @@ critter_cove.animal_additions(hopkins)
 # print(monty)
 
 # * -------------Composing Coming Attractions-------------
-# Output report to terminal
-# print(f"{varmint_village.attractions_name} is where you'll find {varmint_village.description}, like")
+# # Output report to terminal
+# print(
+#     f"{varmint_village.attraction_name} is where you'll find {varmint_village.description}, like"
+# )
 # for animal in varmint_village.animals:
-#     print(f'    * {str(animal)}')
+#     print(f"    * {animal}")
 
-# print(f"{slither_inn.attractions_name} is where you'll find {slither_inn.description}, like")
-# for snake in slither_inn.snakes:
-#     print(f'    * {str(snake)}')
+# print(
+#     f"{slither_inn.attraction_name} is where you'll find {slither_inn.description}, like"
+# )
+# for animal in slither_inn.animals:
+#     print(f"    * {animal}")
 
-# print(f"{critter_cove.attractions_name} is where you'll find {critter_cove.description}, like")
-# for critter in critter_cove.aquatic_animals:
-#     print(f'    * {str(critter)}')
+# print(
+#     f"{critter_cove.attraction_name} is where you'll find {critter_cove.description}, like"
+# )
+# for animal in critter_cove.animals:
+#     print(f"    * {animal}")
 
 # * ---------------Controlling the Animals----------------
 # bramble.chip_number = 555783  # the setter function prevents this
@@ -76,7 +93,15 @@ critter_cove.animal_additions(hopkins)
 # print(critter_cove.last_critter_added)
 
 # * --------------Eliminating Class Waste-----------------
-miss_fuzz.feed()
-sheldon.feed()
-serpentine.feed()
-quackers.feed()
+# miss_fuzz.feed()
+# sheldon.feed()
+# serpentine.feed()
+# quackers.feed()
+
+# *---------------Complex, Clean Critter Classes-----------
+# serpentine.slither()
+# quackers.run()
+# quackers.swim()
+# wilbur.oink()
+
+# *----------------If it Honks Like a Goose-----------------

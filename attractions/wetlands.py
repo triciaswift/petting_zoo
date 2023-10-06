@@ -1,13 +1,6 @@
-class Wetlands:
+from .attractions import Attraction
 
+
+class Wetlands(Attraction):
     def __init__(self, name, description):
-        self.attractions_name = name
-        self.description = description
-        self.aquatic_animals = list()
-
-    def animal_additions(self, animal):
-        self.aquatic_animals.append(animal)
-
-    @property
-    def last_critter_added(self):
-        return f'{self.aquatic_animals[-1]}'
+        super().__init__(name, description)
