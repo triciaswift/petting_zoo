@@ -3,6 +3,6 @@ from .animal import Animal
 
 
 class Corn_Snake(Animal, Slithering):
-    def __init__(self, name, species, food, chip_num):
+    def __init__(self, name, species, food, chip_num, length):
         Animal.__init__(self, name, species, food, chip_num)
-        Slithering.__init__(self)
+        Slithering.__init__(self, length)

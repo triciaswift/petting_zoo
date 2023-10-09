@@ -3,6 +3,6 @@ from .animal import Animal
 
 
 class Python(Animal, Slithering):
-    def __init__(self, name, species, food, chip_num):
+    def __init__(self, name, species, food, chip_num, length):
         Animal.__init__(self, name, species, food, chip_num)
-        Slithering.__init__(self)
+        Slithering.__init__(self, length)

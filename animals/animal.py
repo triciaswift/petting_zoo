@@ -8,7 +8,7 @@ class Animal:
         self.name = name
         self.species = species
         self.food = food
-        self.__chip_number = chip_num
+        # self.__chip_number = chip_num #TODO: see if this still works
         self.date_added = date.today()  # YY-MM-DD
 
     def __str__(self):
@@ -23,4 +23,4 @@ class Animal:
 
     @chip_number.setter  # The setter
     def chip_number(self, num):
-        pass    # prevents the user from setting the value for chip_number
+        pass  # prevents the user from setting the value for chip_number
