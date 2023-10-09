@@ -3,9 +3,9 @@ from .animal import Animal
 
 
 class Boa_Constrictor(Animal, Slithering):
-    def __init__(self, name, species, food, chip_num):
+    def __init__(self, name, species, food, chip_num, length):
         Animal.__init__(self, name, species, food, chip_num)
-        Slithering.__init__(self)
+        Slithering.__init__(self, length)
 
     def feed(self):
         print(

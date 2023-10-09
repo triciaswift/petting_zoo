@@ -18,24 +18,24 @@ from animals import (
 from attractions import Petting_Zoo, Snake_Pit, Wetlands
 
 # Create instances of animals
-miss_fuzz = Llama("Miss Fuzz", "llama", "morning", "Llama Chow", 123456)
-bramble = Donkey("Bramble", "donkey", "midday", "hay", 123789)
-rosie = Goat("Rosie", "goat", "afternoon", "grains", 987654)
-bailey = Sheep("Bailey", "sheep", "morning", "fruit", 456789)
-wilbur = Pig("Wilbur", "pig", "midday", "vegetables", 654321)
-sunny = Corn_Snake("Sunny", "corn snake", "mice", 234567)
-sly = Rat_Snake("Sly", "rat snake", "mice", 765432)
-regal = Kingsnake("Regal", "kingsnake", "lizards", 345678)
-monty = Python("Monty", "python", "mice", 876543)
-serpentine = Boa_Constrictor("Serpentine", "boa constrictor", "mice", 567890)
-quackers = Duck("Quackers", "duck", "Waterfowl Pellets", 321098)
+miss_fuzz = Llama("Miss Fuzz", "llama", "morning", "Llama Chow", 123456, 4)
+bramble = Donkey("Bramble", "donkey", "midday", "hay", 123789, 4)
+rosie = Goat("Rosie", "goat", "afternoon", "grains", 987654, 4)
+bailey = Sheep("Bailey", "sheep", "morning", "fruit", 456789, 4)
+wilbur = Pig("Wilbur", "pig", "midday", "vegetables", 654321, 4)
+sunny = Corn_Snake("Sunny", "corn snake", "mice", 234567, 2)
+sly = Rat_Snake("Sly", "rat snake", "mice", 765432, 3)
+regal = Kingsnake("Regal", "kingsnake", "lizards", 345678, 4)
+monty = Python("Monty", "python", "mice", 876543, 12)
+serpentine = Boa_Constrictor("Serpentine", "boa constrictor", "mice", 567890, 14)
+quackers = Duck("Quackers", "duck", "Waterfowl Pellets", 321098, 2)
 bubbles = Goldfish("Bubbles", "goldfish", "algae", 678901)
 whiskers = Catfish("Whiskers", "catfish", "insects", 890123)
-sheldon = Turtle("Sheldon", "turtle", "fruit", 432109)
-hopkins = Frog("Hopkins", "bullfrog", "insects", 109876)
+sheldon = Turtle("Sheldon", "turtle", "fruit", 432109, 4)
+hopkins = Frog("Hopkins", "bullfrog", "insects", 109876, 4)
 
 # Create instances of attractions
-varmint_village = Petting_Zoo("Varmint Village", "cute and fuzzy critters to cuddle")
+varmint_village = Petting_Zoo("Varmint Village", "critters that love to be pet")
 slither_inn = Snake_Pit("Slither Inn", "stupendous snakes of all sizes")
 critter_cove = Wetlands("Critter Cove", "full of feathered friends and fantastic fish")
 
@@ -103,5 +103,20 @@ critter_cove.add_animal(hopkins)
 # quackers.run()
 # quackers.swim()
 # wilbur.oink()
+# serpentine.length = 10
+# print(serpentine.slither_speed)
+print(serpentine.length)
+serpentine.animal_length()
+quackers.leg_num()
 
 # *----------------If it Honks Like a Goose-----------------
+# dolly = Llama("Dolly", "miniature llama", "morning", "hay", 123457)
+
+# varmint_village.add_animal_pythonic(dolly)
+# varmint_village.add_animal_pythonic(bubbles)
+
+# for animal in varmint_village.animals:
+#     print(animal)
+
+# slither_inn.add_animal_pythonic(dolly)
+# critter_cove.add_animal_pythonic(dolly)
